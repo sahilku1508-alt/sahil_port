@@ -108,7 +108,7 @@ function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; o
     <section id="home" className="relative flex min-h-[min(860px,100dvh)] items-center overflow-hidden border-b hairline pt-24">
       <div className="absolute inset-0 grid-lines opacity-60 [mask-image:linear-gradient(to_bottom,black,transparent_80%)]" />
       <div className="absolute -right-24 top-32 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
-      <div className="section-wrap relative grid items-end gap-16 pb-24 lg:grid-cols-[1fr_320px]">
+      <div className="section-wrap relative grid items-end gap-16 pb-24 lg:grid-cols-[1fr_420px]">
         <div>
           <motion.div initial="hidden" animate="visible" variants={reveal} className="eyebrow mb-9 flex items-center gap-3"><span className="inline-block h-2 w-2 rounded-full bg-primary" /> Currently learning, building, and shipping</motion.div>
           <motion.h1 initial="hidden" animate="visible" variants={reveal} transition={{ delay: .08 }} className="display max-w-4xl text-[clamp(4.25rem,12vw,10.5rem)] font-semibold leading-[.82]">
@@ -124,9 +124,9 @@ function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; o
             </div>
           </motion.div>
         </div>
-        <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .3, duration: .8 }} className="relative border-l border-primary/50 pl-5">
-          <div className="mb-8 flex items-end gap-4">
-            <img src="/sahil-profile.jpeg" alt="Sahil Kumar" className="h-36 w-36 shrink-0 rounded-full border-2 border-primary/70 object-cover object-top shadow-[0_0_42px_rgba(244,103,57,.2)] ring-4 ring-primary/10 sm:h-44 sm:w-44" />
+        <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .3, duration: .8 }} className="relative lg:pt-4">
+          <div className="mb-8 flex flex-col items-start gap-5">
+            <img src="/sahil-profile.jpeg" alt="Sahil Kumar" className="h-[min(84vw,420px)] w-[min(84vw,420px)] shrink-0 rounded-full border-2 border-primary/70 object-cover object-top shadow-[0_0_52px_rgba(244,103,57,.22)] ring-4 ring-primary/10 sm:h-[min(46vh,420px)] sm:w-[min(46vh,420px)]" />
             <div className="pb-1"><div className="mono text-[10px] uppercase tracking-[.14em] text-muted-foreground">Sahil Kumar</div><div className="mt-2 text-xs text-muted-foreground">Computer Science &amp; Engineering student.</div></div>
           </div>
           <div className="mono mb-5 text-[10px] uppercase tracking-[.14em] text-muted-foreground">01 / Signal</div>
