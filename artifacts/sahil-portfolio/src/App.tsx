@@ -124,7 +124,7 @@ function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; o
             </div>
           </motion.div>
         </div>
-        <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .3, duration: .8 }} className="relative lg:pt-4">
+        <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .3, duration: .8 }} className="relative lg:translate-y-24">
           <div className="mb-8 flex flex-col items-start gap-5">
             <img src="/sahil-profile.jpeg" alt="Sahil Kumar" className="h-[min(84vw,420px)] w-[min(84vw,420px)] shrink-0 rounded-full border-2 border-primary/70 object-cover object-top shadow-[0_0_52px_rgba(244,103,57,.22)] ring-4 ring-primary/10 sm:h-[min(46vh,420px)] sm:w-[min(46vh,420px)]" />
             <div className="pb-1"><div className="mono text-[10px] uppercase tracking-[.14em] text-muted-foreground">Sahil Kumar</div><div className="mt-2 text-xs text-muted-foreground">Computer Science &amp; Engineering student.</div></div>
