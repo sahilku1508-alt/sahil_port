@@ -126,7 +126,7 @@ function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; o
         </div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .3, duration: .8 }} className="relative border-l border-primary/50 pl-5">
           <div className="mb-8 flex items-end gap-4">
-            <img src="/sahil-profile.jpeg" alt="Sahil Kumar" className="h-24 w-24 rounded-sm border border-primary/50 object-cover object-top shadow-[0_0_42px_rgba(244,103,57,.12)]" />
+            <img src="/sahil-profile.jpeg" alt="Sahil Kumar" className="h-36 w-36 shrink-0 rounded-full border-2 border-primary/70 object-cover object-top shadow-[0_0_42px_rgba(244,103,57,.2)] ring-4 ring-primary/10 sm:h-44 sm:w-44" />
             <div className="pb-1"><div className="mono text-[10px] uppercase tracking-[.14em] text-muted-foreground">Sahil Kumar</div><div className="mt-2 text-xs text-muted-foreground">Computer Science &amp; Engineering student.</div></div>
           </div>
           <div className="mono mb-5 text-[10px] uppercase tracking-[.14em] text-muted-foreground">01 / Signal</div>
