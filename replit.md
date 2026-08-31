@@ -1,9 +1,10 @@
-# [Project name]
+# Sahil Kumar Portfolio Workspace
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+The workspace contains Sahil Kumar's interactive portfolio website, plus optional API and mockup-preview artifacts.
 
 ## Run & Operate
 
+- `pnpm --filter @workspace/sahil-portfolio run dev` — run the portfolio website (managed preview on port 26102)
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
