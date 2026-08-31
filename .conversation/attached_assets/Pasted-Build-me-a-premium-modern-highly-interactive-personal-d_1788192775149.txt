@@ -1,0 +1,1614 @@
+Build me a **premium, modern, highly interactive personal developer portfolio website for SAHIL KUMAR**.
+
+IMPORTANT: I am providing an existing portfolio website as a **DESIGN, STRUCTURE, UX AND SECTION REFERENCE ONLY**:
+
+https://arjunpandey.vercel.app/
+
+The existing website belongs to another person, **Arjun Pandey**.
+
+**DO NOT use Arjun Pandey's identity, name, biography, education, contact information, skills, projects, achievements, or personal information in the new website.**
+
+The new website must be for:
+
+# SAHIL KUMAR
+
+The Arjun website should only be used to understand the desired portfolio structure, navigation, visual quality, section organization, interactions, and overall presentation.
+
+Create something **similar in structure but more advanced, polished, modern, interactive, and professional**.
+
+==================================================
+IMPORTANT SOURCE OF TRUTH
+=========================
+
+Use the supplied CV of **Sahil Kumar** as the authoritative source for all personal information.
+
+Do NOT invent information.
+
+The CV contains:
+
+Name:
+Sahil Kumar
+
+LinkedIn:
+[www.linkedin.com/in/sahil-kumar1508](http://www.linkedin.com/in/sahil-kumar1508)
+
+Email:
+[sahil.ku1508@gmail.com](mailto:sahil.ku1508@gmail.com)
+
+GitHub:
+https://github.com/sahilku1508-alt
+
+Mobile:
++91 9835832812
+
+Use these details for Sahil's portfolio.
+
+==================================================
+
+1. WEBSITE STRUCTURE
+   ==================================================
+
+The website MUST have these six major sections, following the structure of the reference portfolio:
+
+1. HOME
+2. ABOUT
+3. SKILLS
+4. ACHIEVEMENTS
+5. PROJECTS
+6. CONTACT
+
+Navigation:
+
+HOME
+ABOUT
+SKILLS
+ACHIEVEMENTS
+PROJECTS
+CONTACT
+
+Also include:
+
+* Resume/CV button
+* GitHub
+* LinkedIn
+* Email
+* Theme toggle
+* Mobile navigation
+* Smooth scrolling
+* Active section indicator
+
+Section IDs:
+
+#home
+#about
+#skills
+#achievements
+#projects
+#contact
+
+==================================================
+2. OVERALL DESIGN
+=================
+
+The reference website has a modern personal developer portfolio structure.
+
+Create a significantly more polished version of that concept.
+
+Design direction:
+
+Modern developer portfolio
++
+Futuristic technology aesthetic
++
+Professional student portfolio
++
+Interactive dashboard-like UI
++
+Clean editorial typography
+
+The result should look like a portfolio that Sahil could show to:
+
+* recruiters
+* internship reviewers
+* university faculty
+* hackathon judges
+* developers
+* potential collaborators
+
+Do NOT make it look like:
+
+* a generic Bootstrap website
+* a basic student template
+* an outdated portfolio
+* an excessive gaming website
+* a random AI-generated template
+* a page filled with unnecessary animations
+
+Make it sophisticated.
+
+==================================================
+3. VISUAL STYLE
+===============
+
+Use a premium dark-first design.
+
+Primary background:
+
+Very dark charcoal / near-black
+
+Text:
+
+White / near-white
+
+Secondary text:
+
+Muted gray
+
+Accent:
+
+Professional blue / cyan / violet technology accent
+
+Use:
+
+* subtle gradients
+* thin borders
+* glassmorphism where appropriate
+* soft shadows
+* subtle glow
+* modern cards
+* large typography
+* strong spacing
+* clean layouts
+* smooth transitions
+
+Do not use excessive neon.
+
+The site must also support:
+
+DARK MODE
+LIGHT MODE
+
+Theme preference should be saved using localStorage.
+
+==================================================
+4. TECHNOLOGY
+=============
+
+Use:
+
+React
+Vite
+JavaScript or TypeScript
+Tailwind CSS
+
+Recommended:
+
+Lucide React
+Framer Motion
+
+Only use libraries when they provide real value.
+
+Keep the application lightweight.
+
+The project must work with:
+
+npm install
+npm run dev
+
+There must be:
+
+NO blank screen
+NO broken imports
+NO console errors
+NO broken routes
+
+==================================================
+5. HOME / HERO
+==============
+
+Create a visually impressive hero section.
+
+Hero text:
+
+"Hi, I'm"
+
+SAHIL KUMAR
+
+Primary role:
+
+"Computer Science & Engineering Student"
+
+Secondary positioning:
+
+"Developer | Problem Solver | Technology Enthusiast"
+
+Use only claims supported by the CV.
+
+Supporting text should communicate Sahil's interests in:
+
+* programming
+* web development
+* IoT and embedded systems
+* problem-solving
+* project development
+
+Do NOT claim professional employment or years of experience.
+
+CTA buttons:
+
+[VIEW MY WORK]
+
+[CONTACT ME]
+
+[DOWNLOAD CV]
+
+The buttons must work.
+
+VIEW MY WORK:
+
+Scroll to Projects.
+
+CONTACT ME:
+
+Scroll to Contact.
+
+DOWNLOAD CV:
+
+Use /public/resume.pdf if the CV PDF is added.
+
+If the PDF does not exist, do not create a fake file.
+
+Create a clean placeholder implementation that can easily be connected to the actual CV.
+
+Hero should contain a professional profile image area.
+
+If no image is provided:
+
+Create an elegant placeholder.
+
+Do not fabricate Sahil's appearance.
+
+Possible decorative visual:
+
+A futuristic developer terminal/card showing:
+
+SAHIL.KUMAR
+
+C++
+PYTHON
+C
+
+IoT
+WEB DEVELOPMENT
+
+GITHUB
+
+Use subtle animations.
+
+==================================================
+6. HERO ANIMATIONS
+==================
+
+Use tasteful entrance animations.
+
+Sequence:
+
+Navbar
+→ greeting
+→ name
+→ role
+→ description
+→ CTA buttons
+→ profile/visual card
+
+Use:
+
+fade
+slide
+scale
+
+Keep animations fast and professional.
+
+Do NOT make everything bounce.
+
+==================================================
+7. ABOUT SECTION
+================
+
+Heading:
+
+"About Me"
+
+Create a strong introduction section.
+
+Use Sahil Kumar's identity.
+
+Introduction should focus on:
+
+* Computer Science education
+* programming
+* software development
+* web development
+* IoT
+* embedded systems
+* problem-solving
+* project-based learning
+* hackathon experience
+
+Do not invent a biography that is not supported by the CV.
+
+Create a visually attractive layout with:
+
+LEFT:
+
+About text
+
+RIGHT:
+
+Developer information card
+
+Example:
+
+NAME
+Sahil Kumar
+
+FIELD
+Computer Science & Engineering
+
+FOCUS
+Software Development
+Web Development
+IoT & Embedded Systems
+
+Create an education timeline.
+
+==================================================
+8. EDUCATION
+============
+
+Use the exact education information from Sahil's CV.
+
+---
+
+Lovely Professional University
+Phagwara, Punjab
+
+Bachelor of Technology
+
+Computer Science and Engineering
+
+Aug 2025 – Present
+
+CGPA: 8.20
+
+---
+
+CPS Raxaul
+Raxaul, Bihar
+
+Intermediate
+
+PCM
+
+May 2023 – May 2024
+
+Percentage: 70%
+
+---
+
+TCS Raxaul
+Raxaul, Bihar
+
+Matriculation
+
+Apr 2021 – Apr 2022
+
+Percentage: 80%
+
+---
+
+Present this as a beautiful animated vertical timeline.
+
+Use:
+
+timeline dots
+connecting lines
+institution cards
+dates
+academic results
+
+Do not alter the values.
+
+==================================================
+9. SKILLS
+=========
+
+Heading:
+
+"My Skills"
+
+Subheading:
+
+"Technologies, tools and abilities I work with."
+
+Create categorized skill cards.
+
+CATEGORY 1:
+
+PROGRAMMING LANGUAGES
+
+C++
+Python
+C
+
+CATEGORY 2:
+
+WEB DEVELOPMENT
+
+HTML
+CSS
+
+CATEGORY 3:
+
+DATABASE
+
+MSQL
+MySQL
+
+CATEGORY 4:
+
+TOOLS & PLATFORMS
+
+Git
+GitHub
+
+CATEGORY 5:
+
+IoT & EMBEDDED SYSTEMS
+
+IoT
+Embedded Systems
+
+CATEGORY 6:
+
+SOFT SKILLS
+
+Problem-Solving
+Team Player
+Project Management
+Adaptability
+
+==================================================
+10. SKILL UI
+============
+
+Do NOT invent skill percentages.
+
+Do NOT show:
+
+90%
+95%
+Expert
+Advanced
+
+unless explicitly supported by the CV.
+
+Instead use:
+
+technology badges
+icons
+interactive cards
+category labels
+hover animations
+
+Example card:
+
+C++
+
+Programming Language
+
+On hover:
+
+subtle elevation
+border highlight
+icon animation
+
+Create a responsive skills grid.
+
+==================================================
+11. ACHIEVEMENTS
+================
+
+Heading:
+
+"Achievements"
+
+Create an impressive achievement timeline/card system.
+
+Achievement 1:
+
+InfernoVerse 24-Hour Hackathon
+
+Description:
+
+"Delivered a functional prototype (Humanity OS) under 24-hour pressure, demonstrating adaptability and problem-solving skills."
+
+Achievement 2:
+
+GeeksforGeeks LPU Chapter
+
+Description:
+
+"Successfully participated in the InfernoVerse 24-hour Hackathon conducted in association with the GeeksforGeeks Student Chapter LPU."
+
+Date:
+
+Nov 2025
+
+Create achievement cards with:
+
+* achievement icon
+* title
+* description
+* date
+* visual highlight
+
+Do NOT label the hackathon as a "winner" unless the CV explicitly says so.
+
+==================================================
+12. CERTIFICATIONS
+==================
+
+Place certifications either inside the Achievements section or as a subsection beneath it.
+
+Heading:
+
+"Certifications"
+
+Use the exact CV data:
+
+Microsoft Generative AI
+Coursera
+May 2026
+
+C
+NeoCollab
+April 2025
+
+Python
+Infosys
+Nov 2023
+
+SQL
+HackerRank
+Aug 2025
+
+Create premium certification cards.
+
+Each card:
+
+certificate icon
+certificate title
+provider
+date
+
+If certificate URLs are not available:
+
+Do NOT create fake "View Certificate" links.
+
+Use a clean static card.
+
+==================================================
+13. PROJECTS
+============
+
+This should be one of the strongest sections.
+
+Heading:
+
+"My Projects"
+
+Subheading:
+
+"Building practical solutions through technology."
+
+There are TWO projects in the CV.
+
+DO NOT add fake projects.
+
+==================================================
+PROJECT 1
+=========
+
+TITLE:
+
+Smart Safety Helmet for Coal Miners
+
+DATE:
+
+May 2026
+
+TECHNOLOGIES:
+
+ESP32
+Arduino
+IoT
+Sensors
+GPS
+Wokwi
+
+Description:
+
+"Developed an IoT-based smart safety helmet engineered to monitor hazardous environmental conditions in real time, including toxic gas levels, temperature spikes, flame detection, and obstacle proximity."
+
+Additional project details:
+
+"Integrated multi-sensor modules with an ESP32 micro-controller and simulated circuit logic via Wokwi to ensure fail-safe hardware reliability."
+
+"Implemented GPS tracking protocols for accurate miner localization and rapid response during underground mine hazard events."
+
+Create this as the FEATURED PROJECT.
+
+Visual concept:
+
+Futuristic IoT / embedded systems / smart helmet interface.
+
+If no project image is provided:
+
+Create an elegant technical placeholder using CSS/SVG or a simple abstract visual.
+
+Do not use random copyrighted images.
+
+Display technology badges:
+
+ESP32
+Arduino
+IoT
+Sensors
+GPS
+Wokwi
+
+==================================================
+PROJECT 2
+=========
+
+TITLE:
+
+Humanity OS - Sustainability Dashboard Platform
+
+DATE:
+
+Nov 2025
+
+CATEGORY:
+
+Hackathon Project
+
+TECHNOLOGIES:
+
+HTML
+Tailwind CSS
+JavaScript
+
+Description:
+
+"Developed a futuristic sustainability dashboard platform designed to track environmental metrics."
+
+Additional details:
+
+"Implemented complex responsive layouts and interactive modules using HTML, Tailwind CSS, and JavaScript."
+
+"Engineered the UI logic to ensure a seamless and intuitive user experience under tight deadlines."
+
+Add a:
+
+"HACKATHON PROJECT"
+
+badge.
+
+Technology badges:
+
+HTML
+Tailwind CSS
+JavaScript
+
+==================================================
+14. PROJECT CARD DESIGN
+=======================
+
+Each project card should contain:
+
+Project image/visual
+Project title
+Date
+Category
+Short description
+Technology badges
+Project Details button
+
+Do NOT display GitHub or Live Demo buttons unless real URLs are available.
+
+If no real project URL exists:
+
+Use:
+
+[VIEW DETAILS]
+
+This opens a project modal.
+
+==================================================
+15. PROJECT FILTER
+==================
+
+Add an interactive project filter.
+
+Filters:
+
+ALL
+IoT
+WEB
+HACKATHON
+
+Mapping:
+
+Smart Safety Helmet:
+
+IoT
+
+Humanity OS:
+
+Web
+Hackathon
+
+The filtering should animate smoothly.
+
+Do not create additional projects just to populate categories.
+
+==================================================
+16. PROJECT MODAL
+=================
+
+Clicking a project opens a premium modal.
+
+Modal contains:
+
+Project title
+Date
+Category
+Overview
+Technologies
+Project details
+Key development points
+
+For Smart Safety Helmet:
+
+Show all three CV bullet points.
+
+For Humanity OS:
+
+Show all three CV bullet points.
+
+Modal features:
+
+* fade animation
+* scale animation
+* close button
+* ESC support
+* click outside to close
+* mobile responsive layout
+
+==================================================
+17. CONTACT SECTION
+===================
+
+Heading:
+
+"Let's Connect"
+
+Supporting text:
+
+"Have an idea, opportunity, or project in mind? Feel free to get in touch."
+
+Create:
+
+Name
+Email
+Subject
+Message
+
+[ SEND MESSAGE ]
+
+The form must have proper validation.
+
+Do NOT fake backend submission.
+
+If no backend/email API is configured:
+
+Use a mailto fallback or show that the message has been prepared.
+
+==================================================
+18. SAHIL'S CONTACT DETAILS
+===========================
+
+Use the following exact details from the CV:
+
+Email:
+
+[sahil.ku150@gmail.com](mailto:sahil.ku150@gmail.com)
+
+GitHub:
+
+https://github.com/sahilku1508-alt
+
+LinkedIn:
+
+https://www.linkedin.com/in/sahil-kumar1508
+
+Mobile:
+
++91 9835832812
+
+Display them elegantly.
+
+Create contact cards:
+
+EMAIL
+GITHUB
+LINKEDIN
+PHONE
+
+Each should have the appropriate Lucide icon.
+
+Make the email clickable.
+
+Make GitHub clickable.
+
+Make LinkedIn clickable.
+
+Make phone clickable using:
+
+tel:+919835832812
+
+==================================================
+19. IMPORTANT IDENTITY RULE
+===========================
+
+THIS IS CRITICAL.
+
+The portfolio is for:
+
+SAHIL KUMAR
+
+The following person is ONLY the reference website owner:
+
+ARJUN PANDEY
+
+Never display:
+
+Arjun Pandey
+
+inside Sahil's portfolio.
+
+Do not use:
+
+Arjun's email
+Arjun's phone
+Arjun's location
+Arjun's projects
+Arjun's education
+Arjun's skills
+Arjun's hobbies
+Arjun's biography
+
+The reference website is ONLY being used for:
+
+* layout inspiration
+* section structure
+* navigation
+* UX
+* visual inspiration
+* interaction ideas
+
+==================================================
+20. NAVIGATION
+==============
+
+Desktop navbar:
+
+LEFT:
+
+SAHIL
+
+or
+
+SAHIL KUMAR
+
+CENTER:
+
+HOME
+ABOUT
+SKILLS
+ACHIEVEMENTS
+PROJECTS
+CONTACT
+
+RIGHT:
+
+Theme toggle
+CV button
+
+Navbar should be sticky/fixed.
+
+On scroll:
+
+reduce navbar height slightly
+add subtle background blur
+add border/shadow
+
+Highlight the currently active section.
+
+Use IntersectionObserver.
+
+==================================================
+21. MOBILE NAVIGATION
+=====================
+
+On mobile:
+
+Hamburger button.
+
+Opening it displays:
+
+Home
+About
+Skills
+Achievements
+Projects
+Contact
+
+Theme toggle
+CV
+
+Use a smooth animation.
+
+Close menu after clicking a section.
+
+==================================================
+22. THEME SYSTEM
+================
+
+Support:
+
+Dark Mode
+Light Mode
+
+Default:
+
+Dark Mode
+
+Store preference:
+
+localStorage
+
+Theme transition should be smooth.
+
+==================================================
+23. SCROLL EXPERIENCE
+=====================
+
+Use smooth scrolling.
+
+Add:
+
+scroll reveal animations
+section transitions
+subtle scroll progress indicator
+
+Animations:
+
+fade
+slide
+scale
+
+Keep them subtle.
+
+Respect:
+
+prefers-reduced-motion
+
+==================================================
+24. MICRO INTERACTIONS
+======================
+
+Buttons:
+
+hover lift
+arrow movement
+subtle glow
+
+Cards:
+
+elevation
+border highlight
+
+Skills:
+
+icon animation
+
+Achievements:
+
+timeline animation
+
+Projects:
+
+image/visual movement
+
+Contact:
+
+input focus animation
+
+Keep everything professional.
+
+==================================================
+25. OPTIONAL DEVELOPER TERMINAL
+===============================
+
+Add a small interactive developer terminal if it improves the design.
+
+Example:
+
+$ whoami
+
+Sahil Kumar
+
+$ languages
+
+C++
+Python
+C
+
+$ technologies
+
+HTML
+CSS
+MySQL
+IoT
+Git
+
+$ projects
+
+Smart Safety Helmet
+Humanity OS
+
+$ status
+
+Learning • Building • Improving
+
+Do not add fake information.
+
+==================================================
+26. OPTIONAL DEVELOPER STATUS CARD
+==================================
+
+Add a small futuristic card:
+
+SAHIL.KUMAR
+
+STATUS:
+BUILDING
+
+FOCUS:
+SOFTWARE DEVELOPMENT
+
+STACK:
+C++ • PYTHON • C
+
+INTERESTS:
+WEB • IoT • EMBEDDED
+
+Keep this decorative.
+
+==================================================
+27. PROFILE IMAGE
+=================
+
+If I later provide Sahil's photograph:
+
+Use it in the hero section.
+
+Until then:
+
+Create a clean placeholder.
+
+Do NOT generate or invent a face.
+
+Do not use Arjun's image.
+
+==================================================
+28. CV BUTTON
+=============
+
+Add:
+
+DOWNLOAD CV
+
+The code should expect:
+
+/public/resume.pdf
+
+If the PDF is absent:
+
+do not break the application.
+
+Use a disabled/placeholder state or clearly indicate where the file should be placed.
+
+==================================================
+29. FOOTER
+==========
+
+Footer:
+
+SAHIL KUMAR
+
+Computer Science & Engineering Student
+
+Navigation:
+
+Home
+About
+Skills
+Achievements
+Projects
+Contact
+
+Social:
+
+GitHub
+LinkedIn
+Email
+
+Copyright:
+
+© 2026 Sahil Kumar. All rights reserved.
+
+==================================================
+30. RESPONSIVE DESIGN
+=====================
+
+Test:
+
+1920px
+1440px
+1280px
+1024px
+768px
+480px
+390px
+360px
+
+Desktop:
+
+Large typography
+Wide layouts
+Two-column sections
+Large project cards
+
+Mobile:
+
+Stack content
+Hamburger navigation
+Touch-friendly buttons
+Readable text
+No horizontal scrolling
+Responsive modals
+Responsive forms
+
+The mobile version must be designed intentionally, not simply compressed.
+
+==================================================
+31. ACCESSIBILITY
+=================
+
+Use:
+
+semantic HTML
+proper heading hierarchy
+alt text
+keyboard navigation
+visible focus states
+ARIA labels
+accessible buttons
+accessible forms
+good contrast
+
+Respect reduced motion.
+
+==================================================
+32. PERFORMANCE
+===============
+
+Optimize:
+
+images
+CSS
+JavaScript
+animations
+component rendering
+
+Avoid:
+
+huge images
+unnecessary dependencies
+excessive effects
+continuous expensive animations
+
+The page must load quickly.
+
+==================================================
+33. SEO
+=======
+
+Title:
+
+Sahil Kumar | Computer Science & Engineering Student
+
+Description:
+
+"Portfolio of Sahil Kumar, a Computer Science and Engineering student showcasing programming skills, projects, hackathon experience, achievements, certifications, and technology interests."
+
+Add Open Graph metadata.
+
+==================================================
+34. COMPONENT ARCHITECTURE
+==========================
+
+Use reusable React components.
+
+Suggested structure:
+
+src/
+components/
+Navbar.jsx
+Hero.jsx
+About.jsx
+EducationTimeline.jsx
+Skills.jsx
+Achievements.jsx
+Certifications.jsx
+Projects.jsx
+ProjectCard.jsx
+ProjectModal.jsx
+Contact.jsx
+Footer.jsx
+ThemeToggle.jsx
+ScrollProgress.jsx
+
+data/
+portfolio.js
+
+App.jsx
+main.jsx
+index.css
+
+public/
+images/
+resume.pdf
+
+Store portfolio information in:
+
+src/data/portfolio.js
+
+Use arrays for:
+
+education
+skills
+achievements
+certifications
+projects
+
+This will make the portfolio easy to update.
+
+==================================================
+35. DATA TO USE
+===============
+
+NAME:
+
+Sahil Kumar
+
+CONTACT:
+
+Email:
+[sahil.ku150@gmail.com](mailto:sahil.ku150@gmail.com)
+
+LinkedIn:
+[www.linkedin.com/in/sahil-kumar1508](http://www.linkedin.com/in/sahil-kumar1508)
+
+GitHub:
+https://github.com/sahilku1508-alt
+
+Mobile:
++91 9835832812
+
+---
+
+SKILLS:
+
+Programming Languages:
+
+C++
+Python
+C
+
+Tools / Platforms:
+
+MSQL
+MySQL
+IoT & Embedded Systems
+Web Development
+HTML
+CSS
+Git/GitHub
+
+Soft Skills:
+
+Problem-Solving
+Team Player
+Project Management
+Adaptability
+
+---
+
+PROJECT:
+
+Smart Safety Helmet for Coal Miners
+
+Technologies:
+
+ESP32
+Arduino
+IoT
+Sensors
+GPS
+Wokwi
+
+Date:
+
+May 2026
+
+Description:
+
+Developed an IoT-based smart safety helmet engineered to monitor hazardous environmental conditions in real time, including toxic gas levels, temperature spikes, flame detection, and obstacle proximity.
+
+Additional:
+
+Integrated multi-sensor modules with an ESP32 micro-controller and simulated circuit logic via Wokwi to ensure fail-safe hardware reliability.
+
+Implemented GPS tracking protocols for accurate miner localization and rapid response during underground mine hazard events.
+
+---
+
+PROJECT:
+
+Humanity OS - Sustainability Dashboard Platform
+
+Date:
+
+Nov 2025
+
+Type:
+
+Hackathon Project
+
+Technologies:
+
+HTML
+Tailwind CSS
+JavaScript
+
+Description:
+
+Developed a futuristic sustainability dashboard platform designed to track environmental metrics.
+
+Additional:
+
+Implemented complex responsive layouts and interactive modules using HTML, Tailwind CSS, and JavaScript.
+
+Engineered the UI logic to ensure a seamless and intuitive user experience under tight deadlines.
+
+---
+
+ACHIEVEMENTS:
+
+InfernoVerse 24-Hour Hackathon:
+
+Delivered a functional prototype (Humanity OS) under 24-hour pressure, demonstrating adaptability and problem-solving skills.
+
+GeeksforGeeks LPU Chapter:
+
+Successfully participated in the InfernoVerse 24-hour Hackathon conducted in association with the GeeksforGeeks Student Chapter LPU.
+
+Date:
+
+Nov 2025
+
+---
+
+CERTIFICATIONS:
+
+Microsoft Generative AI
+Coursera
+May 2026
+
+C
+NeoCollab
+April 2025
+
+Python
+Infosys
+Nov 2023
+
+SQL
+HackerRank
+Aug 2025
+
+---
+
+EDUCATION:
+
+Lovely Professional University
+Phagwara, Punjab
+
+Bachelor of Technology
+Computer Science and Engineering
+
+Aug 2025 – Present
+
+CGPA: 8.20
+
+CPS Raxaul
+Raxaul, Bihar
+
+Intermediate
+PCM
+
+May 2023 – May 2024
+
+Percentage: 70%
+
+TCS Raxaul
+Raxaul, Bihar
+
+Matriculation
+
+Apr 2021 – Apr 2022
+
+Percentage: 80%
+
+==================================================
+36. DO NOT INVENT INFORMATION
+=============================
+
+Absolutely do NOT invent:
+
+* internships
+* jobs
+* companies
+* clients
+* professional experience
+* years of experience
+* awards not listed
+* hackathon victory
+* fake rankings
+* fake statistics
+* fake GitHub stars
+* fake project users
+* fake testimonials
+* fake reviews
+* fake certificates
+* fake project URLs
+* fake social media
+* fake technologies
+
+Use ONLY information supplied in the CV.
+
+==================================================
+37. QUALITY REQUIREMENT
+=======================
+
+The website must be substantially better than the reference portfolio.
+
+Improve:
+
+* visual hierarchy
+* typography
+* spacing
+* animations
+* project presentation
+* skills presentation
+* education timeline
+* achievements
+* certifications
+* contact experience
+* responsiveness
+* accessibility
+
+The reference site has six major sections:
+
+HOME
+ABOUT
+SKILLS
+ACHIEVEMENTS
+PROJECTS
+CONTACT
+
+Preserve this structure.
+
+But make the implementation more sophisticated.
+
+==================================================
+38. FINAL TEST
+==============
+
+Before finishing, actually run the application.
+
+Run:
+
+npm install
+
+npm run dev
+
+Then inspect the rendered page.
+
+Verify:
+
+✓ Home works
+✓ About works
+✓ Skills works
+✓ Achievements works
+✓ Projects works
+✓ Contact works
+✓ Navbar works
+✓ Mobile menu works
+✓ Theme toggle works
+✓ Project filters work
+✓ Project modal works
+✓ ESC closes modal
+✓ Contact form validates
+✓ Email link works
+✓ GitHub link works
+✓ LinkedIn link works
+✓ Phone link works
+✓ CV button does not break if PDF is missing
+✓ No console errors
+✓ No React errors
+✓ No blank screen
+✓ No broken imports
+✓ No horizontal overflow
+✓ Mobile layout works
+✓ Keyboard navigation works
+
+==================================================
+39. FINAL INSTRUCTION
+=====================
+
+DO NOT just generate a basic template and stop.
+
+Actually inspect the rendered website.
+
+Fix:
+
+* layout issues
+* spacing issues
+* typography issues
+* responsive issues
+* animation issues
+* broken interactions
+* console errors
+* missing imports
+* broken links
+* accessibility issues
+
+The final product should feel like a **premium, modern developer portfolio specifically designed for SAHIL KUMAR**, inspired by the structure and quality of the reference Arjun portfolio but containing **Sahil Kumar's information only**.
+
+Build the complete working website now.

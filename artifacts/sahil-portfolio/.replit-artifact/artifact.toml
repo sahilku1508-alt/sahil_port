@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Sahil Kumar Portfolio"
+description = "A premium interactive personal portfolio for Sahil Kumar, a Computer Science and Engineering student showcasing his skills, projects, hackathon experience, education, and ways to connect."
+version = "1.0.0"
+id = "artifacts/sahil-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26102
+
+[services.development]
+run = "pnpm --filter @workspace/sahil-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sahil-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sahil-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26102"
+BASE_PATH = "/"

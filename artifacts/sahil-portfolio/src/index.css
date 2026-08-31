@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --font-sans: var(--app-font-sans);
+  --font-serif: var(--app-font-serif);
+  --font-mono: var(--app-font-mono);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: 39 35% 95%;
+  --foreground: 224 24% 13%;
+  --border: 222 18% 80%;
+  --card: 39 39% 98%;
+  --card-foreground: 224 24% 13%;
+  --card-border: 222 18% 80%;
+  --primary: 16 85% 52%;
+  --primary-foreground: 39 39% 98%;
+  --secondary: 222 18% 89%;
+  --secondary-foreground: 224 24% 13%;
+  --muted: 36 25% 88%;
+  --muted-foreground: 220 13% 41%;
+  --accent: 45 93% 57%;
+  --accent-foreground: 224 24% 13%;
+  --destructive: 3 70% 45%;
+  --destructive-foreground: 39 39% 98%;
+  --input: 222 18% 74%;
+  --ring: 16 85% 52%;
+  --sidebar: 39 35% 95%;
+  --sidebar-foreground: 224 24% 13%;
+  --sidebar-border: 222 18% 80%;
+  --sidebar-primary: 16 85% 52%;
+  --sidebar-primary-foreground: 39 39% 98%;
+  --sidebar-accent: 36 28% 88%;
+  --sidebar-accent-foreground: 224 24% 13%;
+  --sidebar-ring: 16 85% 52%;
+  --app-font-sans: 'Manrope', sans-serif;
+  --app-font-serif: 'Space Grotesk', sans-serif;
+  --app-font-mono: 'DM Mono', monospace;
+  --radius: 0.35rem;
+}
+
+.dark {
+  --background: 225 23% 9%;
+  --foreground: 40 28% 93%;
+  --border: 221 16% 23%;
+  --card: 224 21% 12%;
+  --card-foreground: 40 28% 93%;
+  --card-border: 221 16% 23%;
+  --primary: 16 85% 58%;
+  --primary-foreground: 225 23% 9%;
+  --secondary: 222 18% 17%;
+  --secondary-foreground: 40 28% 93%;
+  --muted: 222 18% 17%;
+  --muted-foreground: 220 12% 63%;
+  --accent: 45 93% 57%;
+  --accent-foreground: 225 23% 9%;
+  --destructive: 3 75% 60%;
+  --destructive-foreground: 225 23% 9%;
+  --input: 221 16% 28%;
+  --ring: 16 85% 58%;
+  --sidebar: 225 23% 9%;
+  --sidebar-foreground: 40 28% 93%;
+  --sidebar-border: 221 16% 23%;
+  --sidebar-primary: 16 85% 58%;
+  --sidebar-primary-foreground: 225 23% 9%;
+  --sidebar-accent: 222 18% 17%;
+  --sidebar-accent-foreground: 40 28% 93%;
+  --sidebar-ring: 16 85% 58%;
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    margin: 0;
+  }
+  button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
+  ::selection { background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+}
+
+@layer utilities {
+  .portfolio-shell { background: hsl(var(--background)); color: hsl(var(--foreground)); }
+  .text-balance { text-wrap: balance; }
+  .hairline { border-color: hsl(var(--border) / .65); }
+  .noise::after {
+    content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .035; z-index: 50;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+  }
+}
+
+.section-wrap { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
+.eyebrow { color: hsl(var(--primary)); font: 500 11px/1 var(--app-font-mono); letter-spacing: .16em; text-transform: uppercase; }
+.display { font-family: var(--app-font-serif); letter-spacing: -.065em; }
+.mono { font-family: var(--app-font-mono); }
+.grid-lines {
+  background-image: linear-gradient(hsl(var(--border) / .18) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border) / .18) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.progress-track { position: fixed; inset: 0 0 auto; height: 3px; z-index: 60; background: transparent; }
+.progress-bar { height: 100%; background: hsl(var(--primary)); transform-origin: left; }
+.nav-blur { background: hsl(var(--background) / .82); backdrop-filter: blur(16px); }
+.outline-button, .solid-button { transition: transform .25s ease, background-color .25s ease, border-color .25s ease; }
+.outline-button:hover, .solid-button:hover { transform: translateY(-2px); }
+.solid-button:hover { background: hsl(var(--accent)); }
+.outline-button:focus-visible, .solid-button:focus-visible, .nav-link:focus-visible, .icon-button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
+.nav-link { color: hsl(var(--muted-foreground)); transition: color .2s ease; }
+.nav-link:hover, .nav-link[data-active="true"] { color: hsl(var(--foreground)); }
+.card-lift { transition: transform .3s ease, border-color .3s ease, background-color .3s ease; }
+.card-lift:hover { transform: translateY(-5px); border-color: hsl(var(--primary) / .7); }
+.reveal { animation: reveal .7s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes reveal { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 767px) { .section-wrap { width: min(100% - 32px, 600px); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
