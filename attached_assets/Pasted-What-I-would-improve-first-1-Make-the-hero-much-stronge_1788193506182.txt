@@ -1,0 +1,132 @@
+What I would improve first
+
+1. Make the hero much stronger
+
+Make SAHIL KUMAR the immediate visual focus.
+Add a sharper subtitle such as “Computer Science & Engineering Student”.
+Keep the hero concise instead of putting too much information above the fold.
+Add two clear CTAs: View Projects and Contact Me.
+Add a polished developer/technology visual on the right.
+
+2. Improve the About section
+The section should feel less like a block of CV text. Use a two-column layout:
+
+Left: short personal introduction.
+Right: compact profile/education card.
+Below: animated education timeline.
+
+Use the actual CV education data, including LPU B.Tech CSE, CGPA 8.20, CPS Raxaul, and TCS Raxaul.
+
+3. Upgrade Skills considerably
+Instead of simply listing technologies, group them visually:
+
+Programming: C++, Python, C
+Web: HTML, CSS
+Database: MySQL / MSQL
+IoT & Embedded: IoT, Embedded Systems
+Tools: Git, GitHub
+Soft Skills: Problem-Solving, Team Player, Project Management, Adaptability
+
+These are the skills actually supported by the CV.
+
+4. Make Projects the centerpiece
+This is probably the biggest opportunity.
+
+The Smart Safety Helmet should be a large featured project rather than just another card. It has enough technical substance to deserve a detailed presentation: ESP32, Arduino, sensors, GPS and Wokwi, plus the three development points from the CV.
+
+Then present Humanity OS as the second major project, emphasizing its sustainability-dashboard concept and 24-hour hackathon context.
+
+I'd add:
+
+Project category
+Technology badges
+Hover animation
+Detailed project modal
+“View Details” button
+Technical highlights
+GitHub/demo buttons only if actual links exist
+
+5. Improve Achievements + Certifications
+Don't make these look like ordinary text cards.
+
+Create a timeline / vertical achievement layout for:
+
+InfernoVerse 24-Hour Hackathon
+GeeksforGeeks LPU Chapter participation
+
+Then a separate certification grid for:
+
+Microsoft Generative AI — Coursera
+C — NeoCollab
+Python — Infosys
+SQL — HackerRank
+
+Those details come directly from the CV.
+
+6. Make Contact feel like a final CTA
+Instead of ending with only a form, make it:
+
+Let's build something together.
+
+Then show Sahil's actual:
+
+Email
+GitHub
+LinkedIn
+Phone
+
+The CV provides all four.
+
+7. Add better navigation
+I recommend:
+
+Sticky navbar
+Active section indicator
+Smooth scrolling
+Scroll progress bar
+Mobile hamburger menu
+Theme switcher
+CV button
+
+8. Improve visual consistency
+The entire site should use one design system:
+
+One accent color
+Consistent border radius
+Consistent card styling
+Consistent spacing
+Consistent typography
+Consistent hover animations
+
+Avoid having every section look like a different template.
+
+9. Add subtle—not excessive—animations
+Good:
+
+Hero entrance animation
+Scroll reveal
+Project card hover
+Timeline animation
+Button micro-interactions
+Modal transitions
+
+Avoid:
+
+constant floating objects everywhere
+excessive particle effects
+huge text animations
+animations that slow down mobile
+
+10. Fix the “portfolio hierarchy”
+The visitor should understand this within ~5 seconds:
+
+Sahil Kumar → CSE student → technical skills → projects → hackathon/certifications → contact.
+
+Right now, I'd prioritize making that story much clearer.
+
+My priority order
+Priority	Improvement
+🔴 1	Hero / first impression
+🔴 2	Featured Projects
+🔴 3	Overall visual polish
+🟠 4

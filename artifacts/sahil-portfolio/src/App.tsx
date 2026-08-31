@@ -115,9 +115,10 @@ function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; o
             Sahil<br /><span className="text-primary">Kumar</span><span className="text-accent">.</span>
           </motion.h1>
           <motion.div initial="hidden" animate="visible" variants={reveal} transition={{ delay: .16 }} className="mt-10 max-w-2xl">
+            <p className="font-mono text-xs uppercase tracking-[.14em] text-primary sm:text-sm">{portfolio.role}</p>
             <p className="max-w-md text-lg leading-8 text-muted-foreground">{portfolio.intro}</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <button type="button" onClick={onWork} className="solid-button inline-flex w-fit items-center gap-3 rounded-sm bg-primary px-5 py-3 font-mono text-xs font-medium uppercase tracking-[.12em] text-primary-foreground" data-testid="button-hero-work">View my work <ArrowDownRight size={16} /></button>
+              <button type="button" onClick={onWork} className="solid-button inline-flex w-fit items-center gap-3 rounded-sm bg-primary px-5 py-3 font-mono text-xs font-medium uppercase tracking-[.12em] text-primary-foreground" data-testid="button-hero-work">View projects <ArrowDownRight size={16} /></button>
               <button type="button" onClick={onContact} className="inline-flex w-fit items-center gap-3 rounded-sm border hairline px-5 py-3 font-mono text-xs font-medium uppercase tracking-[.12em] text-foreground transition-colors hover:border-primary hover:text-primary" data-testid="button-hero-contact">Contact me <ArrowUpRight size={16} /></button>
               {resumeAvailable ? <a href="/resume.pdf" download className="inline-flex w-fit items-center gap-2 px-2 py-3 font-mono text-[10px] uppercase tracking-[.12em] text-muted-foreground transition-colors hover:text-primary" data-testid="link-hero-resume"><Download size={15} /> Download CV</a> : <span className="inline-flex w-fit items-center gap-2 px-2 py-3 font-mono text-[10px] uppercase tracking-[.12em] text-muted-foreground/60" aria-disabled="true" data-testid="status-hero-resume"><Download size={15} /> CV coming soon</span>}
             </div>
@@ -125,8 +126,8 @@ function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; o
         </div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .3, duration: .8 }} className="relative border-l border-primary/50 pl-5">
           <div className="mb-8 flex items-end gap-4">
-            <div className="grid h-24 w-24 place-items-center rounded-sm border border-primary/50 bg-primary/10 font-mono text-2xl font-bold text-primary shadow-[0_0_42px_rgba(244,103,57,.12)]" aria-label="Sahil Kumar profile placeholder">SK</div>
-            <div className="pb-1"><div className="mono text-[10px] uppercase tracking-[.14em] text-muted-foreground">Profile image</div><div className="mt-2 text-xs text-muted-foreground">Placeholder until a photo is provided.</div></div>
+            <img src="/sahil-profile.jpeg" alt="Sahil Kumar" className="h-24 w-24 rounded-sm border border-primary/50 object-cover object-top shadow-[0_0_42px_rgba(244,103,57,.12)]" />
+            <div className="pb-1"><div className="mono text-[10px] uppercase tracking-[.14em] text-muted-foreground">Sahil Kumar</div><div className="mt-2 text-xs text-muted-foreground">Computer Science &amp; Engineering student.</div></div>
           </div>
           <div className="mono mb-5 text-[10px] uppercase tracking-[.14em] text-muted-foreground">01 / Signal</div>
           <div className="space-y-4 text-sm leading-6 text-muted-foreground">
@@ -145,14 +146,20 @@ function About() {
     <section id="about" className="border-b hairline py-28">
       <div className="section-wrap">
         <SectionLabel index="01">A little context</SectionLabel>
-        <div className="grid gap-14 lg:grid-cols-[.85fr_1.15fr]">
+        <div className="grid gap-14 lg:grid-cols-[1fr_.85fr]">
           <div>
             <h2 className="display max-w-md text-5xl font-semibold leading-[.98] sm:text-6xl">Still early.<br /><span className="text-primary">Already curious.</span></h2>
+            <p className="mt-8 max-w-xl text-lg leading-9 text-foreground/90">I’m Sahil, a Computer Science and Engineering student at Lovely Professional University. I’m interested in programming, web development, IoT, embedded systems, problem-solving, and project development.</p>
+            <p className="mt-6 max-w-xl leading-7 text-muted-foreground">My projects are a way to learn in public: follow a question, understand the parts, and make something functional enough to test. That means writing code, connecting devices, and working with people when the clock is moving.</p>
           </div>
-          <div className="max-w-2xl">
-            <p className="text-xl leading-9 text-foreground/90">I’m Sahil, a Computer Science and Engineering student at Lovely Professional University. I’m interested in programming, web development, IoT, embedded systems, problem-solving, and project development.</p>
-            <p className="mt-7 leading-7 text-muted-foreground">My projects are a way to learn in public: follow a question, understand the parts, and make something functional enough to test. That means writing code, connecting devices, and working with people when the clock is moving.</p>
-            <div className="mt-12 flex flex-wrap gap-2">{portfolio.interests.map((interest) => <span key={interest} className="rounded-full border hairline px-3 py-2 font-mono text-[10px] uppercase tracking-[.1em] text-muted-foreground">{interest}</span>)}</div>
+          <div className="rounded-sm border hairline bg-card/70 p-7 sm:p-8">
+            <div className="mb-8 flex items-center justify-between"><span className="eyebrow">Profile / 01</span><GraduationCap size={18} className="text-primary" /></div>
+            <dl className="divide-y hairline">
+              <div className="grid gap-2 py-4 sm:grid-cols-[90px_1fr]"><dt className="mono text-[10px] uppercase tracking-[.1em] text-muted-foreground">Name</dt><dd className="text-sm">Sahil Kumar</dd></div>
+              <div className="grid gap-2 py-4 sm:grid-cols-[90px_1fr]"><dt className="mono text-[10px] uppercase tracking-[.1em] text-muted-foreground">Field</dt><dd className="text-sm">Computer Science &amp; Engineering</dd></div>
+              <div className="grid gap-2 py-4 sm:grid-cols-[90px_1fr]"><dt className="mono text-[10px] uppercase tracking-[.1em] text-muted-foreground">Focus</dt><dd className="text-sm leading-7">Software Development<br />Web Development<br />IoT &amp; Embedded Systems</dd></div>
+            </dl>
+            <div className="mt-7 flex flex-wrap gap-2">{portfolio.interests.map((interest) => <span key={interest} className="rounded-full border hairline px-3 py-2 font-mono text-[10px] uppercase tracking-[.1em] text-muted-foreground">{interest}</span>)}</div>
           </div>
         </div>
       </div>
@@ -162,10 +169,12 @@ function About() {
 
 function Skills() {
   const groups = [
-    { title: 'Languages', icon: <Code2 size={17} />, items: portfolio.skills.languages },
-    { title: 'Web & data', icon: <Terminal size={17} />, items: portfolio.skills.webAndData },
+    { title: 'Programming', icon: <Code2 size={17} />, items: portfolio.skills.programming },
+    { title: 'Web', icon: <Terminal size={17} />, items: portfolio.skills.web },
+    { title: 'Database', icon: <Network size={17} />, items: portfolio.skills.database },
+    { title: 'IoT & Embedded', icon: <BriefcaseBusiness size={17} />, items: portfolio.skills.iot },
     { title: 'Tools', icon: <Network size={17} />, items: portfolio.skills.tools },
-    { title: 'Working style', icon: <BriefcaseBusiness size={17} />, items: portfolio.skills.waysOfWorking },
+    { title: 'Soft Skills', icon: <Check size={17} />, items: portfolio.skills.softSkills },
   ];
   return (
     <section id="skills" className="border-b hairline py-28">
@@ -218,10 +227,10 @@ function Work({ onSelect }: { onSelect: (project: Project) => void }) {
           <div className="flex flex-wrap gap-2" role="group" aria-label="Filter projects">{filters.map((item) => <button key={item} type="button" onClick={() => setFilter(item)} className={`rounded-full border px-4 py-2 font-mono text-[10px] uppercase tracking-[.1em] transition-colors ${filter === item ? 'border-primary bg-primary text-primary-foreground' : 'hairline text-muted-foreground hover:text-foreground'}`} data-testid={`button-filter-${item.toLowerCase()}`}>{item}</button>)}</div>
         </div>
           <div className="grid gap-5 lg:grid-cols-2">
-          {projects.map((project, index) => <motion.button type="button" key={project.id} onClick={() => onSelect(project)} initial="hidden" whileInView="visible" viewport={{ once: true, amount: .2 }} variants={reveal} transition={{ delay: index * .08 }} className="card-lift group relative overflow-hidden rounded-sm border hairline bg-card p-7 text-left" data-testid={`card-project-${project.id}`}>
+           {projects.map((project, index) => <motion.button type="button" key={project.id} onClick={() => onSelect(project)} initial="hidden" whileInView="visible" viewport={{ once: true, amount: .2 }} variants={reveal} transition={{ delay: index * .08 }} className={`card-lift group relative overflow-hidden rounded-sm border hairline bg-card p-7 text-left ${project.id === 'smart-safety-helmet' ? 'lg:col-span-2 lg:p-9' : ''}`} data-testid={`card-project-${project.id}`}>
             <div className={`absolute right-0 top-0 h-32 w-32 translate-x-8 -translate-y-8 rounded-full blur-3xl ${project.accent === 'orange' ? 'bg-primary/20' : 'bg-cyan-400/15'}`} />
             <div className="relative flex min-h-[310px] flex-col justify-between">
-               <div><div className="mb-8 flex items-center justify-between"><span className="eyebrow">{project.categories.join(' / ')} / {project.date}</span><ArrowUpRight size={19} className="text-muted-foreground transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-primary" /></div><div className={`mb-8 h-16 overflow-hidden rounded-sm border hairline bg-gradient-to-r ${project.accent === 'orange' ? 'from-primary/15 via-primary/5 to-transparent' : 'from-cyan-400/15 via-cyan-400/5 to-transparent'}`}><div className="grid h-full grid-cols-[repeat(12,1fr)] opacity-50">{Array.from({ length: 12 }).map((_, line) => <span key={line} className="border-r hairline" />)}</div></div><h3 className="display max-w-lg text-3xl font-semibold leading-tight">{project.title}</h3><p className="mt-5 max-w-lg leading-7 text-muted-foreground">{project.description}</p></div>
+               <div><div className="mb-8 flex items-center justify-between"><span className="eyebrow">{project.categories.join(' / ')} / {project.date}</span><ArrowUpRight size={19} className="text-muted-foreground transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-primary" /></div><div className={`mb-8 h-16 overflow-hidden rounded-sm border hairline bg-gradient-to-r ${project.accent === 'orange' ? 'from-primary/15 via-primary/5 to-transparent' : 'from-cyan-400/15 via-cyan-400/5 to-transparent'}`}><div className="grid h-full grid-cols-[repeat(12,1fr)] opacity-50">{Array.from({ length: 12 }).map((_, line) => <span key={line} className="border-r hairline" />)}</div></div><div className="flex flex-wrap items-start justify-between gap-4"><h3 className="display max-w-2xl text-3xl font-semibold leading-tight lg:text-4xl">{project.title}</h3><span className="rounded-full border border-primary/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[.1em] text-primary">View details</span></div><p className="mt-5 max-w-2xl leading-7 text-muted-foreground">{project.description}</p></div>
               <div className="mt-10 flex flex-wrap gap-2">{project.stack.map((tag) => <span key={tag} className="rounded-sm bg-secondary px-2.5 py-1.5 font-mono text-[10px] text-secondary-foreground">{tag}</span>)}</div>
             </div>
           </motion.button>)}
@@ -237,7 +246,7 @@ function Achievements() {
       <div className="section-wrap grid gap-14 lg:grid-cols-[.8fr_1.2fr]">
         <div><SectionLabel index="05">Proof of practice</SectionLabel><h2 className="display max-w-sm text-5xl font-semibold leading-[.98] sm:text-6xl">Pressure<br /><span className="text-accent">tested.</span></h2></div>
         <div>
-          <div className="divide-y hairline border-y">{portfolio.achievements.map((item) => <div key={item.title} className="flex gap-5 py-7"><Trophy className="mt-1 shrink-0 text-primary" size={19} strokeWidth={1.5} /><div><h3 className="font-semibold">{item.title}</h3><p className="mt-2 leading-7 text-muted-foreground">{item.text}</p></div></div>)}</div>
+          <div className="relative border-l border-primary/40 pl-7 sm:pl-9">{portfolio.achievements.map((item, index) => <div key={item.title} className="relative pb-9 last:pb-0"><span className="absolute -left-[2.05rem] top-1.5 grid h-5 w-5 place-items-center rounded-full border border-primary bg-background sm:-left-[2.55rem]"><Trophy className="text-primary" size={11} strokeWidth={1.7} /></span><div className="mono mb-3 text-[10px] uppercase tracking-[.1em] text-primary">0{index + 1} / Nov 2025</div><h3 className="font-semibold">{item.title}</h3><p className="mt-2 leading-7 text-muted-foreground">{item.text}</p></div>)}</div>
           <div className="mt-14"><div className="mb-5 eyebrow">Certifications</div><div className="grid gap-3 sm:grid-cols-2">{portfolio.certifications.map((cert) => <div key={cert.name} className="flex items-center justify-between rounded-sm border hairline bg-card/50 p-4"><div><p className="text-sm font-semibold">{cert.name}</p><p className="mt-1 text-xs text-muted-foreground">{cert.issuer}</p></div><span className="mono text-[10px] text-primary">{cert.date}</span></div>)}</div></div>
         </div>
       </div>
@@ -264,7 +273,7 @@ function Contact() {
       <div className="section-wrap relative">
         <SectionLabel index="06">Start a conversation</SectionLabel>
         <div className="grid gap-16 lg:grid-cols-[1fr_.75fr]">
-          <div><h2 className="display max-w-2xl text-[clamp(3.7rem,8vw,7.5rem)] font-semibold leading-[.85]">Have an idea?<br /><span className="text-primary">Say hello.</span></h2><p className="mt-10 max-w-md text-lg leading-8 text-muted-foreground">Whether it’s a project, a question, or just a shared interest in building things, I’m always open to a thoughtful message.</p><div className="mt-12 flex flex-wrap gap-x-7 gap-y-4">{[<a key="email" href={`mailto:${portfolio.contact.email}`} className="flex items-center gap-2 text-sm text-foreground hover:text-primary" data-testid="link-contact-email"><Mail size={16} />{portfolio.contact.email}</a>, <a key="phone" href={`tel:${portfolio.contact.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 text-sm text-foreground hover:text-primary" data-testid="link-contact-phone"><Phone size={16} />{portfolio.contact.phone}</a>]}</div><div className="mt-8 flex gap-3"><a href={portfolio.contact.github} target="_blank" rel="noreferrer" aria-label="Sahil Kumar on GitHub" className="icon-button grid h-10 w-10 place-items-center rounded-full border hairline hover:text-primary" data-testid="link-github"><Github size={17} /></a><a href={portfolio.contact.linkedin} target="_blank" rel="noreferrer" aria-label="Sahil Kumar on LinkedIn" className="icon-button grid h-10 w-10 place-items-center rounded-full border hairline hover:text-primary" data-testid="link-linkedin"><Linkedin size={17} /></a></div></div>
+          <div><h2 className="display max-w-2xl text-[clamp(3.7rem,8vw,7.5rem)] font-semibold leading-[.85]">Let’s build<br /><span className="text-primary">something together.</span></h2><p className="mt-10 max-w-md text-lg leading-8 text-muted-foreground">Whether it’s a project, a question, or just a shared interest in building things, I’m always open to a thoughtful message.</p><div className="mt-12 flex flex-wrap gap-x-7 gap-y-4">{[<a key="email" href={`mailto:${portfolio.contact.email}`} className="flex items-center gap-2 text-sm text-foreground hover:text-primary" data-testid="link-contact-email"><Mail size={16} />{portfolio.contact.email}</a>, <a key="phone" href={`tel:${portfolio.contact.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 text-sm text-foreground hover:text-primary" data-testid="link-contact-phone"><Phone size={16} />{portfolio.contact.phone}</a>]}</div><div className="mt-8 flex gap-3"><a href={portfolio.contact.github} target="_blank" rel="noreferrer" aria-label="Sahil Kumar on GitHub" className="icon-button grid h-10 w-10 place-items-center rounded-full border hairline hover:text-primary" data-testid="link-github"><Github size={17} /></a><a href={portfolio.contact.linkedin} target="_blank" rel="noreferrer" aria-label="Sahil Kumar on LinkedIn" className="icon-button grid h-10 w-10 place-items-center rounded-full border hairline hover:text-primary" data-testid="link-linkedin"><Linkedin size={17} /></a></div></div>
           <form onSubmit={submit} className="rounded-sm border hairline bg-card/75 p-6 sm:p-8" noValidate>
             <div className="mb-7 flex items-center justify-between"><span className="mono text-[10px] uppercase tracking-[.13em] text-muted-foreground">Direct line</span><Send size={17} className="text-primary" /></div>
             <label className="mb-5 block"><span className="mb-2 block font-mono text-[10px] uppercase tracking-[.1em] text-muted-foreground">Name</span><input value={form.name} onChange={update('name')} className="w-full border-0 border-b hairline bg-transparent px-0 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none" placeholder="Your name" data-testid="input-contact-name" /></label>

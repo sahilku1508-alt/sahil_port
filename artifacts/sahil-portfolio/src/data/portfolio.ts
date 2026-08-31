@@ -19,10 +19,12 @@ export const portfolio = {
   intro: 'I like turning curious questions into working systems — from connected hardware to useful web interfaces.',
   interests: ['Programming', 'Web development', 'IoT', 'Embedded systems', 'Problem-solving', 'Project development'],
   skills: {
-    languages: ['C++', 'Python', 'C'],
-    webAndData: ['HTML', 'CSS', 'MSQL', 'MySQL'],
+    programming: ['C++', 'Python', 'C'],
+    web: ['HTML', 'CSS'],
+    database: ['MSQL', 'MySQL'],
+    iot: ['IoT', 'Embedded Systems'],
     tools: ['Git', 'GitHub'],
-    waysOfWorking: ['IoT', 'Embedded Systems', 'Problem-Solving', 'Team Player', 'Project Management', 'Adaptability'],
+    softSkills: ['Problem-Solving', 'Team Player', 'Project Management', 'Adaptability'],
   },
   education: [
     { school: 'Lovely Professional University', place: 'Phagwara, Punjab', credential: 'Bachelor of Technology, Computer Science and Engineering', date: 'Aug 2025–Present', result: 'CGPA 8.20' },
