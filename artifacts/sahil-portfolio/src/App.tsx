@@ -166,7 +166,7 @@ function SectionLabel({ index, children }: { index: string; children: ReactNode 
   return <div className="mb-8 flex items-center gap-3"><span className="mono text-[10px] text-primary">{index}</span><span className="h-px w-8 bg-primary/60" /><span className="eyebrow">{children}</span></div>;
 }
 
-function Hero({ onWork, resumeAvailable }: { onWork: () => void; resumeAvailable: boolean }) {
+function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; onWork: () => void; resumeAvailable: boolean }) {
   const [mode, setMode] = useState(0);
   const modes = ['Developer', 'Problem solver', 'Web development', 'IoT & embedded systems'];
   useEffect(() => {
@@ -191,7 +191,8 @@ function Hero({ onWork, resumeAvailable }: { onWork: () => void; resumeAvailable
             <p className="max-w-md text-lg leading-8 text-muted-foreground">{portfolio.intro}</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <motion.button whileTap={{ scale: .97 }} type="button" onClick={onWork} className="solid-button inline-flex w-fit items-center gap-3 rounded-sm px-5 py-3 font-mono text-xs font-semibold uppercase tracking-[.12em] text-primary-foreground" data-testid="button-hero-work">View projects <ArrowDownRight size={16} /></motion.button>
-              {resumeAvailable ? <a href="/resume.pdf" target="_blank" rel="noreferrer" className="outline-button inline-flex w-fit items-center gap-2 rounded-sm border border-white/10 px-4 py-3 font-mono text-[10px] uppercase tracking-[.1em] text-muted-foreground hover:border-accent hover:text-accent" data-testid="link-hero-resume"><ArrowUpRight size={15} /> View CV</a> : <span className="inline-flex w-fit items-center gap-2 px-2 py-3 font-mono text-[10px] uppercase tracking-[.1em] text-muted-foreground/60" aria-disabled="true" data-testid="status-hero-resume"><Download size={15} /> CV coming soon</span>}
+              <button type="button" onClick={onContact} className="outline-button inline-flex w-fit items-center gap-3 rounded-sm border border-primary/35 bg-primary/[.04] px-5 py-3 font-mono text-xs font-medium uppercase tracking-[.12em] text-foreground hover:border-primary hover:text-primary" data-testid="button-hero-contact">Contact me <ArrowUpRight size={16} /></button>
+              {resumeAvailable ? <a href="/resume.pdf" download className="outline-button inline-flex w-fit items-center gap-2 rounded-sm border border-white/10 px-4 py-3 font-mono text-[10px] uppercase tracking-[.12em] text-muted-foreground hover:border-accent hover:text-accent" data-testid="link-hero-resume"><Download size={15} /> Download CV</a> : <span className="inline-flex w-fit items-center gap-2 px-2 py-3 font-mono text-[10px] uppercase tracking-[.12em] text-muted-foreground/60" aria-disabled="true" data-testid="status-hero-resume"><Download size={15} /> CV coming soon</span>}
             </div>
           </motion.div>
         </div>
@@ -458,7 +459,7 @@ function Home() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-  return <div className="portfolio-shell noise min-h-[100dvh]"><CursorLayer /><div className="progress-track"><div className="progress-bar" style={{ transform: `scaleX(${progress})` }} /></div><Header activeSection={activeSection} dark={dark} setDark={setDark} /><main><Hero onWork={() => scrollToSection('projects')} resumeAvailable={resumeAvailable} /><About /><Skills /><Education /><Work onSelect={setSelectedProject} /><Achievements /><Certificates /><Contact /></main><Footer /><AnimatePresence>{selectedProject && <ProjectModal project={selectedProject} close={() => setSelectedProject(null)} />}</AnimatePresence></div>;
+  return <div className="portfolio-shell noise min-h-[100dvh]"><CursorLayer /><div className="progress-track"><div className="progress-bar" style={{ transform: `scaleX(${progress})` }} /></div><Header activeSection={activeSection} dark={dark} setDark={setDark} /><main><Hero onContact={() => scrollToSection('contact')} onWork={() => scrollToSection('projects')} resumeAvailable={resumeAvailable} /><About /><Skills /><Education /><Work onSelect={setSelectedProject} /><Achievements /><Certificates /><Contact /></main><Footer /><AnimatePresence>{selectedProject && <ProjectModal project={selectedProject} close={() => setSelectedProject(null)} />}</AnimatePresence></div>;
 }
 
 function Router() {
