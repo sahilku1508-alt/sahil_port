@@ -35,11 +35,31 @@ export const portfolio = {
     { title: 'InfernoVerse 24-Hour Hackathon', text: 'Delivered a functional Humanity OS prototype under 24-hour pressure.' },
     { title: 'GeeksforGeeks LPU Chapter', text: 'Participated in the InfernoVerse hackathon in association with the student chapter.' },
   ],
-  certifications: [
-    { name: 'Microsoft Generative AI', issuer: 'Coursera', date: 'May 2026' },
-    { name: 'C', issuer: 'NeoCollab', date: 'April 2025' },
-    { name: 'Python', issuer: 'Infosys', date: 'Nov 2023' },
-    { name: 'SQL', issuer: 'HackerRank', date: 'Aug 2025' },
+  certificates: [
+    {
+      title: 'Computer Programming',
+      issuer: 'neoColab · Lovely Professional University',
+      date: 'May 2026',
+      description: 'A 150-hour course certificate recognizing consistent practice and strong foundations in computer programming.',
+      file: '/certificates/computer-programming.pdf',
+      preview: '/certificates/computer-programming.png',
+    },
+    {
+      title: 'Introduction to Python',
+      issuer: 'Infosys Springboard',
+      date: 'February 2026',
+      description: 'Course completion certificate covering Python fundamentals and the building blocks of practical programming.',
+      file: '/certificates/introduction-to-python.pdf',
+      preview: '/certificates/introduction-to-python.png',
+    },
+    {
+      title: 'Programming in C',
+      issuer: 'Infosys Springboard',
+      date: 'March 2026',
+      description: 'Course completion certificate focused on C syntax, logic, and core problem-solving concepts.',
+      file: '/certificates/programming-in-c.pdf',
+      preview: '/certificates/programming-in-c.png',
+    },
   ],
   projects: [
     {

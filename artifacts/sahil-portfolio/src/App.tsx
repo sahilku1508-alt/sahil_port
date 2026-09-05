@@ -42,6 +42,7 @@ const navigation = [
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'achievements', label: 'Achievements' },
+  { id: 'certificates', label: 'Certificates' },
   { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' },
 ];
@@ -320,7 +321,55 @@ function Achievements() {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: .25 }} variants={reveal}><SectionLabel index="05">Proof of practice</SectionLabel><h2 className="display max-w-sm text-5xl font-bold leading-[.98] sm:text-6xl">Pressure<br /><span className="text-accent">tested.</span></h2></motion.div>
         <div>
           <div className="relative border-l border-primary/35 pl-7 sm:pl-9">{portfolio.achievements.map((item, index) => <motion.div initial={{ opacity: 0, x: 14 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: .3 }} transition={{ delay: index * .12 }} key={item.title} className="relative pb-9 last:pb-0"><span className="timeline-node absolute -left-[2.05rem] top-1.5 grid h-5 w-5 place-items-center rounded-full border border-primary bg-background sm:-left-[2.55rem]"><Trophy className="text-primary" size={11} strokeWidth={1.7} /></span><div className="mono mb-3 text-[10px] uppercase tracking-[.1em] text-primary">0{index + 1} / Nov 2025</div><h3 className="font-semibold">{item.title}</h3><p className="mt-2 leading-7 text-muted-foreground">{item.text}</p></motion.div>)}</div>
-          <div className="mt-14"><div className="mb-5 flex items-center gap-2 eyebrow"><Award size={14} /> Certifications</div><div className="grid gap-3 sm:grid-cols-2">{portfolio.certifications.map((cert, index) => <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: index * .08 }} key={cert.name} className="tech-card flex items-center justify-between rounded-sm border hairline bg-card/50 p-4"><div><p className="text-sm font-semibold">{cert.name}</p><p className="mt-1 text-xs text-muted-foreground">{cert.issuer}</p></div><span className="mono text-[10px] text-primary">{cert.date}</span></motion.div>)}</div></div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Certificates() {
+  return (
+    <section id="certificates" className="border-b hairline py-28">
+      <div className="section-wrap">
+        <SectionLabel index="06">Proof of learning</SectionLabel>
+        <div className="grid gap-14 lg:grid-cols-[.8fr_1.2fr]">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: .25 }} variants={reveal}>
+            <h2 className="display max-w-sm text-5xl font-bold leading-[.98] sm:text-6xl">Learning<br /><span className="rgb-text text-primary">documented.</span></h2>
+            <p className="mt-7 max-w-sm leading-7 text-muted-foreground">A few milestones from the coursework and structured practice shaping my programming foundation.</p>
+          </motion.div>
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {portfolio.certificates.map((certificate, index) => (
+              <motion.a
+                key={certificate.title}
+                href={certificate.file}
+                target="_blank"
+                rel="noreferrer"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: .2 }}
+                variants={reveal}
+                transition={{ delay: index * .08 }}
+                className="group block rounded-sm border hairline bg-card/55 p-3 transition-colors hover:border-primary/60"
+                data-testid={`link-certificate-${index + 1}`}
+              >
+                <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-white/10 bg-slate-950">
+                  <img src={certificate.preview} alt={`${certificate.title} certificate`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+                  <span className="absolute inset-x-2 bottom-2 flex items-center justify-between rounded-sm border border-white/10 bg-slate-950/80 px-3 py-2 font-mono text-[9px] uppercase tracking-[.1em] text-cyan-200 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
+                    Open certificate <ArrowUpRight size={13} />
+                  </span>
+                </div>
+                <div className="mt-4 flex items-start justify-between gap-3">
+                  <h3 className="text-sm font-semibold leading-5">{certificate.title}</h3>
+                  <Award size={15} className="shrink-0 text-primary" />
+                </div>
+                <p className="mt-2 text-xs leading-5 text-muted-foreground">{certificate.description}</p>
+                <div className="mt-4 flex items-center justify-between gap-2 border-t hairline pt-3 font-mono text-[9px] uppercase tracking-[.08em] text-muted-foreground">
+                  <span>{certificate.issuer}</span>
+                  <span className="shrink-0 text-primary">{certificate.date}</span>
+                </div>
+              </motion.a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -344,7 +393,7 @@ function Contact() {
     <section id="contact" className="relative overflow-hidden py-32">
       <div className="absolute inset-0 grid-lines opacity-45" />
       <div className="section-wrap relative">
-        <SectionLabel index="06">Start a conversation</SectionLabel>
+         <SectionLabel index="07">Start a conversation</SectionLabel>
         <div className="grid gap-16 lg:grid-cols-[1fr_.75fr]">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: .25 }} variants={reveal}><h2 className="display max-w-2xl text-[clamp(3.7rem,8vw,7.5rem)] font-bold leading-[.85]">Let’s build<br /><span className="rgb-text text-primary">something together.</span></h2><p className="mt-10 max-w-md text-lg leading-8 text-muted-foreground">Whether it’s a project, a question, or just a shared interest in building things, I’m always open to a thoughtful message.</p><div className="mt-12 grid max-w-lg gap-3 sm:grid-cols-2">{[<a key="email" href={`mailto:${portfolio.contact.email}`} className="card-lift flex items-center gap-2 rounded-sm border border-primary/20 bg-card/50 p-4 text-sm text-foreground hover:text-primary" data-testid="link-contact-email"><Mail size={16} />{portfolio.contact.email}</a>, <a key="phone" href={`tel:${portfolio.contact.phone.replace(/\s/g, '')}`} className="card-lift flex items-center gap-2 rounded-sm border border-primary/20 bg-card/50 p-4 text-sm text-foreground hover:text-primary" data-testid="link-contact-phone"><Phone size={16} />{portfolio.contact.phone}</a>]}</div><div className="mt-8 flex gap-3"><a href={portfolio.contact.github} target="_blank" rel="noreferrer" aria-label="Sahil Kumar on GitHub" className="icon-button grid h-10 w-10 place-items-center rounded-full border hairline hover:text-primary" data-testid="link-github"><Github size={17} /></a><a href={portfolio.contact.linkedin} target="_blank" rel="noreferrer" aria-label="Sahil Kumar on LinkedIn" className="icon-button grid h-10 w-10 place-items-center rounded-full border hairline hover:text-primary" data-testid="link-linkedin"><Linkedin size={17} /></a></div></motion.div>
           <motion.form initial="hidden" whileInView="visible" viewport={{ once: true, amount: .2 }} variants={reveal} onSubmit={submit} className="rgb-frame rounded-sm p-6 sm:p-8" noValidate>
@@ -410,7 +459,7 @@ function Home() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-  return <div className="portfolio-shell noise min-h-[100dvh]"><CursorLayer /><div className="progress-track"><div className="progress-bar" style={{ transform: `scaleX(${progress})` }} /></div><Header activeSection={activeSection} dark={dark} setDark={setDark} /><main><Hero onContact={() => scrollToSection('contact')} onWork={() => scrollToSection('projects')} resumeAvailable={resumeAvailable} /><About /><Skills /><Education /><Work onSelect={setSelectedProject} /><Achievements /><Contact /></main><Footer /><AnimatePresence>{selectedProject && <ProjectModal project={selectedProject} close={() => setSelectedProject(null)} />}</AnimatePresence></div>;
+  return <div className="portfolio-shell noise min-h-[100dvh]"><CursorLayer /><div className="progress-track"><div className="progress-bar" style={{ transform: `scaleX(${progress})` }} /></div><Header activeSection={activeSection} dark={dark} setDark={setDark} /><main><Hero onContact={() => scrollToSection('contact')} onWork={() => scrollToSection('projects')} resumeAvailable={resumeAvailable} /><About /><Skills /><Education /><Work onSelect={setSelectedProject} /><Achievements /><Certificates /><Contact /></main><Footer /><AnimatePresence>{selectedProject && <ProjectModal project={selectedProject} close={() => setSelectedProject(null)} />}</AnimatePresence></div>;
 }
 
 function Router() {
