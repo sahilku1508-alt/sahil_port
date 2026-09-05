@@ -181,7 +181,7 @@ function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; o
         <div>
           <motion.div initial="hidden" animate="visible" variants={reveal} className="eyebrow mb-8 flex items-center gap-3"><span className="inline-block h-2 w-2 rounded-full bg-primary shadow-[0_0_14px_#00f5ff]" /> &lt; CSE student /&gt;</motion.div>
           <motion.p initial="hidden" animate="visible" variants={reveal} transition={{ delay: .04 }} className="mono mb-3 text-xs text-muted-foreground">&gt; Hi, I&apos;m</motion.p>
-          <motion.h1 initial="hidden" animate="visible" variants={reveal} transition={{ delay: .08 }} className="display max-w-4xl text-[clamp(4.1rem,11vw,9.6rem)] font-extrabold uppercase leading-[.82]">
+          <motion.h1 initial="hidden" animate="visible" variants={reveal} transition={{ delay: .08 }} className="display mt-4 max-w-4xl text-[clamp(3.8rem,8vw,7.5rem)] font-extrabold uppercase leading-[.86]">
             Sahil<br /><span className="rgb-text text-primary">Kumar</span><span className="text-accent">.</span>
           </motion.h1>
           <motion.div initial="hidden" animate="visible" variants={reveal} transition={{ delay: .16 }} className="mt-10 max-w-2xl">
