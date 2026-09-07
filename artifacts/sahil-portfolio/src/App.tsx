@@ -193,8 +193,7 @@ function Hero({ onContact, onWork, resumeAvailable }: { onContact: () => void; o
               <motion.button whileTap={{ scale: .97 }} type="button" onClick={onWork} className="solid-button inline-flex w-fit items-center gap-3 rounded-sm px-5 py-3 font-mono text-xs font-semibold uppercase tracking-[.12em] text-primary-foreground" data-testid="button-hero-work">View projects <ArrowDownRight size={16} /></motion.button>
               <button type="button" onClick={onContact} className="outline-button inline-flex w-fit items-center gap-3 rounded-sm border border-primary/35 bg-primary/[.04] px-5 py-3 font-mono text-xs font-medium uppercase tracking-[.12em] text-foreground hover:border-primary hover:text-primary" data-testid="button-hero-contact">Contact me <ArrowUpRight size={16} /></button>
               <a
-  href="/attached_assets
-/Sahil_CV.pdf"
+  href="/Sahil_CV.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="outline-button inline-flex w-fit items-center gap-2 rounded-sm border border-white/10 px-4 py-3 font-mono text-[10px] uppercase tracking-[.12em] text-muted-foreground hover:border-accent hover:text-accent"
